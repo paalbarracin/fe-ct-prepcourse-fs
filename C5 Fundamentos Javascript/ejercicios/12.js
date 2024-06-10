@@ -1,4 +1,4 @@
-function tienenMismaLongitud(str1, str2) {
+function tienenMismaLongitud(str1,str2) {
   // La función recibe dos argumentos llamados "str1" y "str2" que son strings.
   // Retorna true si los dos strings tienen la misma longitud.
   // De lo contrario, retorna false.
@@ -6,6 +6,12 @@ function tienenMismaLongitud(str1, str2) {
   // "SoyHenry", "HenrySoy" ---> true 
   // "hi", "there" ---> false 
   // Tu código:
+  if(String(str1).length==String(str2).length){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 module.exports = tienenMismaLongitud;
